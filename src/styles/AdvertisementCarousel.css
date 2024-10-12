@@ -1,0 +1,57 @@
+.carousel-container {
+  width: 250px;
+  height: 400px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 20px;
+}
+
+.course-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.course-slide:hover {
+  transform: scale(1.05);
+}
+
+.course-video {
+  width: 100%;
+  height: auto;
+  /* max-height: 200px; */
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.course-info {
+  text-align: center;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.course-info h3 {
+  color: #1a73e8;
+  font-size: 1.2rem;
+  white-space: normal;
+  overflow: visible;
+  word-wrap: break-word;
+  margin-bottom: 10px;
+}
+
+.course-info p {
+  color: #555;
+  font-size: 1rem;
+  white-space: normal;
+  line-height: 1.2rem;
+  word-wrap: break-word;
+  max-height: none;
+}

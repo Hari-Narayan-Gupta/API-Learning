@@ -1,0 +1,270 @@
+.api-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f9fc; /* Light background */
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+    margin: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+  }
+
+.api-heading{
+  text-align: center;
+}
+
+  .api-requests,
+.api-response {
+  flex-basis: 100%; /* Full width on smaller screens */
+  margin-bottom: 20px; /* Space between sections on small screens */
+}
+  
+  .api-requests {
+    flex-basis: 35%;
+    background-color: #fafaff; /* Soft light background */
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .api-requests ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .api-requests li {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    margin: 10px 0;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .api-requests li:hover {
+    background-color: #f1f1ff; /* Light hover effect */
+    transform: scale(1.02);
+  }
+  
+  .api-requests li.active {
+    background-color: #e6e6ff; /* Light active background */
+    color: black;
+  }
+  
+  .request-method {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .request-method.get {
+    background-color: #d9e8fc; /* Soft pastel blue for GET */
+    color: #1a73e8; /* Blue text */
+  }
+  
+  .request-method.post {
+    background-color: #e7f1d4; /* Soft pastel green for POST */
+    color: #4caf50; /* Green text */
+  }
+  
+  .request-method.put {
+    background-color: #fff3cd; /* Soft pastel yellow for PUT */
+    color: #ffcc00; /* Yellow text */
+  }
+  
+  .request-method.delete {
+    background-color: #f8d7da; /* Soft pastel pink for DELETE */
+    color: #dc3545; /* Red text */
+  }
+  
+  .request-label {
+    font-size: 1rem;
+    color: #333; /* Darker text for labels */
+  }
+  
+  .api-response {
+    flex-basis: 60%;
+    background-color: #f0f7ff; /* Light pastel blue background for response */
+    padding: 20px;
+    border-radius: 8px;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+    max-width: 100%;
+  }
+  
+  .api-response.loading {
+    opacity: 0.5;
+  }
+  
+  pre {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    overflow-x: auto;
+    max-height: 85vh;
+    max-width: 60vh;
+  }
+  
+  a {
+    color: #1a73e8; /* Blue for links */
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  a:hover {
+    color: #0f5baf; /* Darker blue on hover */
+  }
+  
+  p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #555; /* Professional gray for paragraph text */
+  }
+  
+
+  .api-response h4 {
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  pre {
+    background-color: #f4f4f9;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+    overflow-x: auto;
+  }
+  
+  .api-response {
+    position: relative;
+    padding: 20px;
+    background-color: #f9f9fc; /* Light pastel background */
+    border-radius: 8px;
+  }
+  
+  .response-container {
+    position: relative;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow-x: auto;
+  }
+
+
+
+  
+  .copy-icon-wrapper {
+    align-items: center;
+    padding-bottom: 4px;
+    float: right;
+    position: sticky;
+    top: 22px;
+    right: 38px;
+  }
+  
+  .copy-icon {
+    cursor: pointer;
+    margin-right: 35px;
+    color: #007bff;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .copy-icon:hover {
+    color: #0056b3;
+  }
+  
+  .copied-label {
+    color: #28a745; /* Green color for "Copied!" */
+    font-weight: bold;
+  }
+  
+
+  @media (min-width: 768px) {
+    .api-requests {
+      flex-basis: 35%;
+    }
+  
+    .api-response {
+      flex-basis: 60%;
+    }
+    
+  }
+
+  @media (max-width: 768px) {
+    .api-container {
+      flex-wrap: wrap;
+    }
+  }
+
+
+  @media (max-width: 576px) {
+    .api-container {
+      padding: 10px;
+      margin: 10px;
+    }
+  
+    .content {
+      padding: 10px;
+      max-width: 100%;
+    }
+  
+    .api-requests li {
+      padding: 5px 10px;
+    }
+  
+    .api-response pre {
+      max-height: 50vh; /* Limit the height on small screens */
+      max-width: 100%;
+    }
+  
+    .advertisement-card {
+      padding: 10px;
+    }
+  }
+
+  
+
+
+
+  /* -------------------------- */
+
+
+
+.api-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.api-requests, .api-response {
+  width: 45%; 
+}
+
+.fixed-ad {
+  position: absolute;
+  right: 60px;
+  top: 20%;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.fixed-ad img {
+  width: 100%; /* Make sure the image fits within the ad container */
+  height: 65vh;
+}
+
+@media (max-width: 768px) {
+  /* On smaller screens, hide or reposition the ad */
+  .fixed-ad {
+    display: none;
+  }
+}
+
+.course-slide{
+  height: 100vh;
+}

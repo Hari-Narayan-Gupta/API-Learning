@@ -1,0 +1,19 @@
+.App {
+    text-align: lefts;
+    font-family: Arial, sans-serif;
+  }
+  
+  .content {
+    max-width: 1200px;  
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+  
+  body {
+    background-color: #eef2f3;
+    margin: 0;
+    padding: 0;
+  }
+  
